@@ -1,0 +1,1 @@
+Test application to see how beanstalk works
