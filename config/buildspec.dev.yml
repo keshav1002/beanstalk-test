@@ -1,0 +1,19 @@
+version: 0.2
+
+phases:
+  install:
+    runtime-versions:
+      nodejs: 12
+    commands:
+      - echo Installing dependencies
+      - npm install
+      - echo Installation Done
+  build:
+    commands:
+      - echo Testing Service
+      - npm test
+      - echo Test Done
+
+cache:
+  paths:
+    - "node_modules/**/*"
